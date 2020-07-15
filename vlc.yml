@@ -1,5 +1,6 @@
 ---
 - name: Installing VLC MSI
+  hosts: all
   tasks:
   - name: Download the VLC Installer
     win_get_url:
