@@ -10,4 +10,4 @@
     win_msi:
       path: c:\ansible_examples\vlc-3.0.8-win64.msi
       state: present
-      arguments: /qn
+      extra_args: qn
