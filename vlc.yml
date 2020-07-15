@@ -4,7 +4,7 @@
   tasks:
   - name: Download the VLC Installer
     win_get_url:
-      url:https://get.videolan.org/vlc/3.0.8/win64/vlc-3.0.8-win64.msi
+      url: https://get.videolan.org/vlc/3.0.8/win64/vlc-3.0.8-win64.msi
       dest: c:\ansible_examples\vlc-3.0.8-win64.msi
   - name: Install MSI
       win_package:
