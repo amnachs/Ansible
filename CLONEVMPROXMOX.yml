@@ -1,15 +1,17 @@
 ---
-- hosts:
-  - all
-- name: Clone VM with source vmid and target newid and raw format
-  community.general.proxmox_kvm:
-    api_user: root@pam
-    api_password:
-    api_host: SRVPAPV001
-    clone: arbitrary_name
-    vmid: 106
-    newid: 110
-    name: SRV-PA-WEB-Linux-001
-    node: SRVPAPV001
-    format: qcow2
-    timeout: 300
+- name : Clone VM with souce vmid
+  hosts: all
+
+  tasks: 
+  - name : Clone VM 
+    community.general.proxmox_kvm:
+      api_user: root@pam
+      api_password: 1234
+      api_host: SRVPAPV001
+      clone: arbitrary_name
+      vmid: 106
+      newid: 110
+      name: SRV-PA-WEB-Linux-001
+      node: SRVPAPV001
+      format: qcow2
+      timeout: 300
