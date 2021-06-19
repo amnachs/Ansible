@@ -1,5 +1,4 @@
 ---
-
 name: Clone vm
   community.general.proxmox_kvm:
     api_user: root@pam
