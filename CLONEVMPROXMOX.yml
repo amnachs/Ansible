@@ -4,7 +4,7 @@
 
   tasks: 
     - name : Clone VM 
-      proxmox:
+      clone:
         api_user: root@pam
         api_password: 1234
         api_host: SRVPAPV001
