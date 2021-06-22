@@ -15,4 +15,3 @@
         node: SRVPAPV001
         format: qcow2
         timeout: 300
-        state: started
