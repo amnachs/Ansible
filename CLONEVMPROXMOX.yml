@@ -1,13 +1,10 @@
 ---
 - name : Clone VM with souce vmid
   hosts: all
-  
+
   tasks: 
     - name : Clone VM 
       proxmox_kvm:
-        api_user: root@pam
-        api_password: 1234
-        api_host: SRVPAPV001
         clone: arbitrary_name
         vmid: 106
         newid: 110
